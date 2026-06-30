@@ -1,6 +1,6 @@
 baseURL = "https://bardenn.uk/"
 theme = "retro"
-languageCode = "en"
+locale = "en"
 title = "bardenn's blog"
 copyright = "© bardenn CC BY-SA 4.0"
 
@@ -9,12 +9,11 @@ enableRobotsTXT = true
 enableEmoji = true
 capitalizeListTitles = false
 
-disableKinds = ["taxonomy"]
 [taxonomies]
 tag = "tags"
 
 [permalinks]
-blog = "/:slugorfilename/"
+blog = "/:slugorcontentbasename/"
 tags = "/blog/:slug"
 
 [markup.goldmark.renderer]
